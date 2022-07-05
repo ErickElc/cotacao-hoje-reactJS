@@ -3,8 +3,8 @@ import "./main.scss"
 
 function Main(){
     return(
-        <div className="ContainerMain">
-            <Formulario></Formulario>
+        <div>
+            <Formulario ></Formulario>
         </div>
     )
 }

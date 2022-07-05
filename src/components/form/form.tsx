@@ -1,28 +1,33 @@
 import  { useState } from "react";
 import { IMaskInput } from 'react-imask';
 import "./form.scss";
-const url = `https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,AUD-BRL,RUB-BRL,CAD-BRL,GBP-BRL`;
-const Moedas = ["USD", "EUR", "CAD", "GBP", "RUB", "AUD"];
+const url = `https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,AUD-BRL,RUB-BRL,CAD-BRL,GBP-BRL,ARS-BRL`;
+const Moedas = ["USD", "EUR", "CAD", "GBP", "RUB", "AUD","ARS"];
+
 function Formulario(){
+    // ESTADOS
     const [index, setIndex] = useState({ i: '0', placeholder: Moedas[0] });
     const [cotacao, setCotacao] = useState('');
-    const [valor, setValor] = useState({moeda1: '', moeda2: ''});
+    const [valor, setValor] = useState({moeda1: '', moeda2: ""});
+    const [background, setBackground] = useState({flag: Moedas[0]});
+    // Api
     fetch(url).then((res)=> (res.json())).then((data)=>{
-        var dados = [data.USDBRL.ask,data.EURBRL.ask,data.CADBRL.ask,data.GBPBRL.ask,data.RUBBRL.ask,data.AUDBRL.ask];
+        var dados = [data.USDBRL.ask,data.EURBRL.ask,data.CADBRL.ask,data.GBPBRL.ask,data.RUBBRL.ask,data.AUDBRL.ask,data.ARSBRL.ask];
         let dadosFormatado = parseFloat(dados[parseInt(index.i)]).toFixed(2);
-        setCotacao((dadosFormatado));
+        setCotacao(dadosFormatado);
     });
-    function selecionarMoeda(evento: any){
+    // Selecionar
+    function selecionarMoeda(evento?: any){
         setIndex({
             i:evento.target.value,
             placeholder: Moedas[evento.target.value]
         });
-        setValor({ moeda1: "", moeda2: "" })
+        setBackground({flag: `${Moedas[evento.target.value]}`})
+        setValor({ moeda1: '', moeda2: "" })
     }
     return(
-        <>
+        <div className="ContainerMain" id={`${background.flag}`}>
             <div className="Form">
-                <i className="imagem"/>
                 <form className="ContainerForm">
                     <div className="EmCima">
                         <select className="Selection" id="Selection1" >
@@ -46,13 +51,16 @@ function Formulario(){
                             />
                     </div>
                     <div>
-                        <select value={index.i} onChange={(e) => selecionarMoeda(e)} className="Selection" id="Selection2">
+                        <select value={index.i} onChange={(e) => {
+                                selecionarMoeda(e); 
+                            }}  className="Selection" id="Selection2">
                             <option id="USD" value="0">USD</option>
                             <option id="EUR" value="1">EUR</option>
                             <option id="CAD" value="2">CAD</option>
                             <option id="GBP" value="3">Libra</option>
                             <option id="RUB" value="4">RUB</option>
                             <option id="AUD" value="5">AUD</option>
+                            <option id="ARS" value="6">ARS</option>
                         </select>
                         <IMaskInput
                             mask={Number}
@@ -74,7 +82,7 @@ function Formulario(){
                     </div>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
 

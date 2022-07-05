@@ -7,6 +7,7 @@
     -webkit-box-shadow: 0px 1px 5px 0px #676767;
     box-shadow: 0px 1px 5px 0px #676767;
     padding: 60px;
+    background-color: white;
     .inputs{
         width:70px;
         text-align: start;
@@ -65,11 +66,27 @@
     align-items: center;
     
 }
-.imagem{
-    position: relative;
-    top: -39px;
-    left: 0px;
-    height: 150px;
-    width: 150px;
-    background-image: url(../../assets/Logoo.png);
+#USD{
+    background-image: url(../../assets/flags/USA.png);
+}
+#EUR{
+    background-image: url(../../assets/flags/EUR.png);
+    @media (max-width: 700px) {
+        background-image: url(../../assets/flags/MOB/EURMOB.png);
+    }
+}
+#CAD{
+    background-image: url(../../assets/flags/CAD.png);
+}
+#GBP{
+    background-image: url(../../assets/flags/GBP.png);
+}
+#RUB{
+    background-image: url(../../assets/flags/RUB.png);
+}
+#AUD{
+    background-image: url(../../assets/flags/AUD.png);
+}
+#ARS{
+    background-image: url(../../assets/flags/ARS.png);
 }
