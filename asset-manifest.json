@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/cotacao-hoje-reactJS/static/css/main.0e5fa4e9.css",
-    "main.js": "/cotacao-hoje-reactJS/static/js/main.b3f1d026.js",
+    "main.css": "/cotacao-hoje-reactJS/static/css/main.478460c1.css",
+    "main.js": "/cotacao-hoje-reactJS/static/js/main.460c93a6.js",
     "static/js/787.28cb0dcd.chunk.js": "/cotacao-hoje-reactJS/static/js/787.28cb0dcd.chunk.js",
+    "static/media/ARS.png": "/cotacao-hoje-reactJS/static/media/ARS.e60ed1c470ec6718b5e4.png",
+    "static/media/RUB.png": "/cotacao-hoje-reactJS/static/media/RUB.d0374afd7a0b4ee34aca.png",
+    "static/media/AUD.png": "/cotacao-hoje-reactJS/static/media/AUD.30d58cc6bd5768b04371.png",
+    "static/media/CAD.png": "/cotacao-hoje-reactJS/static/media/CAD.52c2ce0c66d02a0af6e8.png",
+    "static/media/USA.png": "/cotacao-hoje-reactJS/static/media/USA.6921fa8bbfa1febb18cb.png",
+    "static/media/GBP.png": "/cotacao-hoje-reactJS/static/media/GBP.f35cb0e40f3e5bdb9f8c.png",
+    "static/media/EURMOB.png": "/cotacao-hoje-reactJS/static/media/EURMOB.24afc31f9eee1a226406.png",
+    "static/media/EUR.png": "/cotacao-hoje-reactJS/static/media/EUR.adc8ef15ff704182636c.png",
     "static/media/Logoo.png": "/cotacao-hoje-reactJS/static/media/Logoo.245d24e10b025377f9f3.png",
     "index.html": "/cotacao-hoje-reactJS/index.html",
-    "main.0e5fa4e9.css.map": "/cotacao-hoje-reactJS/static/css/main.0e5fa4e9.css.map",
-    "main.b3f1d026.js.map": "/cotacao-hoje-reactJS/static/js/main.b3f1d026.js.map",
+    "main.478460c1.css.map": "/cotacao-hoje-reactJS/static/css/main.478460c1.css.map",
+    "main.460c93a6.js.map": "/cotacao-hoje-reactJS/static/js/main.460c93a6.js.map",
     "787.28cb0dcd.chunk.js.map": "/cotacao-hoje-reactJS/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e5fa4e9.css",
-    "static/js/main.b3f1d026.js"
+    "static/css/main.478460c1.css",
+    "static/js/main.460c93a6.js"
   ]
 }
