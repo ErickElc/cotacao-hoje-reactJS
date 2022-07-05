@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cotacao-hoje-reactJS/static/css/main.478460c1.css",
-    "main.js": "/cotacao-hoje-reactJS/static/js/main.460c93a6.js",
+    "main.js": "/cotacao-hoje-reactJS/static/js/main.470b4817.js",
     "static/js/787.28cb0dcd.chunk.js": "/cotacao-hoje-reactJS/static/js/787.28cb0dcd.chunk.js",
     "static/media/ARS.png": "/cotacao-hoje-reactJS/static/media/ARS.e60ed1c470ec6718b5e4.png",
     "static/media/RUB.png": "/cotacao-hoje-reactJS/static/media/RUB.d0374afd7a0b4ee34aca.png",
@@ -14,11 +14,11 @@
     "static/media/Logoo.png": "/cotacao-hoje-reactJS/static/media/Logoo.245d24e10b025377f9f3.png",
     "index.html": "/cotacao-hoje-reactJS/index.html",
     "main.478460c1.css.map": "/cotacao-hoje-reactJS/static/css/main.478460c1.css.map",
-    "main.460c93a6.js.map": "/cotacao-hoje-reactJS/static/js/main.460c93a6.js.map",
+    "main.470b4817.js.map": "/cotacao-hoje-reactJS/static/js/main.470b4817.js.map",
     "787.28cb0dcd.chunk.js.map": "/cotacao-hoje-reactJS/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.478460c1.css",
-    "static/js/main.460c93a6.js"
+    "static/js/main.470b4817.js"
   ]
 }
