@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cotacao-hoje-reactJS/static/css/main.d4cb5137.css",
-    "main.js": "/cotacao-hoje-reactJS/static/js/main.57911a69.js",
+    "main.css": "/cotacao-hoje-reactJS/static/css/main.9a0715d4.css",
+    "main.js": "/cotacao-hoje-reactJS/static/js/main.131ea331.js",
     "static/js/787.28cb0dcd.chunk.js": "/cotacao-hoje-reactJS/static/js/787.28cb0dcd.chunk.js",
     "static/media/ARS.png": "/cotacao-hoje-reactJS/static/media/ARS.e60ed1c470ec6718b5e4.png",
     "static/media/RUB.png": "/cotacao-hoje-reactJS/static/media/RUB.d0374afd7a0b4ee34aca.png",
@@ -13,12 +13,12 @@
     "static/media/EUR.png": "/cotacao-hoje-reactJS/static/media/EUR.adc8ef15ff704182636c.png",
     "static/media/Logoo.png": "/cotacao-hoje-reactJS/static/media/Logoo.245d24e10b025377f9f3.png",
     "index.html": "/cotacao-hoje-reactJS/index.html",
-    "main.d4cb5137.css.map": "/cotacao-hoje-reactJS/static/css/main.d4cb5137.css.map",
-    "main.57911a69.js.map": "/cotacao-hoje-reactJS/static/js/main.57911a69.js.map",
+    "main.9a0715d4.css.map": "/cotacao-hoje-reactJS/static/css/main.9a0715d4.css.map",
+    "main.131ea331.js.map": "/cotacao-hoje-reactJS/static/js/main.131ea331.js.map",
     "787.28cb0dcd.chunk.js.map": "/cotacao-hoje-reactJS/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4cb5137.css",
-    "static/js/main.57911a69.js"
+    "static/css/main.9a0715d4.css",
+    "static/js/main.131ea331.js"
   ]
 }
