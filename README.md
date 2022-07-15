@@ -25,6 +25,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://pt-br.reactjs.org/)
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [fecth](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [SASS](https://sass-lang.com/)
 
 ---
