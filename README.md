@@ -3,12 +3,7 @@
 ## Demo 📸
 
 <div align="center" >
-<<<<<<< HEAD
   <img src="./github/cotacao.gif" alt="demo-web" height="425">
-=======
-  <img src="./github/GifWeb.gif" alt="demo-web" height="425">
-  <img src="./github/GifMobile.gif" alt="demo-mobile" height="425"> 
->>>>>>> 5cbff3e8d741d8c76048de4119a835a5770ccb74
 </div>
 
 ---
@@ -36,16 +31,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 <a href="https://www.linkedin.com/in/erick-nascimento-1926a8231/">
-<<<<<<< HEAD
 <img src="linkedin.png" alt="linkedin" height="50"></a>
 <br />
 
 
 Veja meu Linkedin: [Erick Nascimento](https://www.linkedin.com/in/erick-nascimento-1926a8231/)
-=======
-<img src=" g" alt="linkedin" height="50"></a>
-<br />
-
-
-Veja meu Linkedin: [Erick Nascimento](https://www.linkedin.com/in/erick-nascimento-1926a8231/)
->>>>>>> 5cbff3e8d741d8c76048de4119a835a5770ccb74
