@@ -3,7 +3,7 @@
 ## Demo 📸
 
 <div align="center" >
-  <img src="./github/cotacao.gif" alt="demo-web" height="425">
+  <img src="./github/giphy.gif" alt="demo-web" height="425">
 </div>
 
 ---
