@@ -64,7 +64,17 @@
     display:flex;
     flex-flow: column;
     align-items: center;
-    
+}    
+@media (max-height: 400px) {
+    .ContainerMain{
+        // margin-top: 100px;
+        .ContainerForm{
+            margin-top: 175px;
+            padding: 32px;
+        }
+
+    }
+
 }
 #USD{
     background-image: url(../../assets/flags/USA.png);

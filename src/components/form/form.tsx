@@ -1,5 +1,4 @@
 import  { useState } from "react";
-import { IMaskInput } from 'react-imask';
 import "./form.scss";
 const url = `https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,AUD-BRL,RUB-BRL,CAD-BRL,GBP-BRL,ARS-BRL`;
 const Moedas = ["USD", "EUR", "CAD", "GBP", "RUB", "AUD","ARS"];
@@ -33,22 +32,19 @@ function Formulario(){
                         <select className="Selection" id="Selection1" >
                             <option id="Brasil">BRL</option>
                         </select>
-                        <IMaskInput
-                            mask={Number}
-                            radix="."
-                            normalizeZeros= {true}
+                        <input 
+                            type="number"
                             max={999999999999999}
                             id="Input1" 
                             className="inputs"
                             value={valor.moeda1}
-                            unmask={false} 
-                            onChange={(e:any) => setValor( {
-                                moeda1: `${(e.target.value == 0) ? null : e.target.value}`,
-                                moeda2:`${(e.target.value == 0) ? null : (e.target.value / parseFloat(cotacao))}`
+                            onChange={(e: {target: HTMLInputElement}) => setValor( {
+                                moeda1: `${(e.target.value !== '0') ? parseFloat(e.target.value) : ''}`,
+                                moeda2:`${(e.target.value !== '0') ? (parseFloat(e.target.value) / parseFloat(cotacao)).toFixed(2) : ''}`
                             })}
                             placeholder={"BRL"}
-                            mapToRadix={ ['.']}
-                            />
+                        />
+            
                     </div>
                     <div>
                         <select value={index.i} onChange={(e) => {
@@ -62,23 +58,18 @@ function Formulario(){
                             <option id="AUD" value="5">AUD</option>
                             <option id="ARS" value="6">ARS</option>
                         </select>
-                        <IMaskInput
-                            mask={Number}
+                        <input 
+                            type="number"
                             max={999999999999999}
-                            radix="."
-                            id="Input2" 
-                            normalizeZeros= {true}
-                            className="inputs"
-                            value={valor.moeda2}
-                            unmask={false}
-                            onChange={(e:any) => setValor( {
-                                moeda1: `${(e.target.value == 0) ? null : (e.target.value * parseFloat(cotacao))}`,
-                                moeda2:`${(e.target.value == 0) ? null : e.target.value}`
+                            onChange={(e: {target: HTMLInputElement}) => setValor( {
+                                moeda1: `${(e.target.value !== '0') ? (parseFloat(e.target.value) * parseFloat(cotacao)).toFixed(2): ''}`,
+                                moeda2:`${(e.target.value !== '0') ? parseFloat(e.target.value) : ''}`
                             })}
+                            value={valor.moeda2}
                             placeholder={`${index.placeholder}`}
-                            mapToRadix={ ['.']}
-                            />
-                        
+                            id="Input2" 
+                            className="inputs"
+                        />
                     </div>
                 </form>
             </div>

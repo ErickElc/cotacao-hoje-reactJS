@@ -12,5 +12,12 @@
       background-repeat: no-repeat;
       background-size:cover ;
       background-image: url(../../assets/logos/Logoo.png);
+    }
+}
+
+@media (max-height:400px) {
+  .Container-Header{
+    padding: 10px;
+
   }
-  }
+}
