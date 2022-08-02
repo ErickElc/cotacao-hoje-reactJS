@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import  { useEffect, useState } from "react";
 import "./form.scss";
 const url = `https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,AUD-BRL,RUB-BRL,CAD-BRL,GBP-BRL,ARS-BRL`;
 const Moedas = ["USD", "EUR", "CAD", "GBP", "RUB", "AUD","ARS"];
@@ -10,11 +10,13 @@ function Formulario(){
     const [valor, setValor] = useState({moeda1: '', moeda2: ""});
     const [background, setBackground] = useState({flag: Moedas[0]});
     // Api
-    fetch(url).then((res)=> (res.json())).then((data)=>{
-        var dados = [data.USDBRL.ask,data.EURBRL.ask,data.CADBRL.ask,data.GBPBRL.ask,data.RUBBRL.ask,data.AUDBRL.ask,data.ARSBRL.ask];
-        let dadosFormatado = parseFloat(dados[parseInt(index.i)]).toFixed(2);
-        setCotacao(dadosFormatado);
-    });
+    useEffect(()=>{
+        fetch(url).then((res)=> (res.json())).then((data)=>{
+            var dados = [data.USDBRL.ask,data.EURBRL.ask,data.CADBRL.ask,data.GBPBRL.ask,data.RUBBRL.ask,data.AUDBRL.ask,data.ARSBRL.ask];
+            let dadosFormatado = parseFloat(dados[parseInt(index.i)]).toFixed(2);
+            setCotacao(dadosFormatado);
+        });
+    },[index])
     // Selecionar
     function selecionarMoeda(evento?: any){
         setIndex({
