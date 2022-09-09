@@ -1,81 +1,94 @@
-.ContainerForm{
-    margin-bottom: 300px;
-    display:flex;
-    flex-flow: column;
-    border-radius: 10px;
-    -moz-box-shadow: 0px 1px 5px 0px #676767;
-    -webkit-box-shadow: 0px 1px 5px 0px #676767;
-    box-shadow: 0px 1px 5px 0px #676767;
-    padding: 60px;
-    background-color: white;
-    .inputs{
-        width:70px;
-        text-align: start;
-        border: 0px;
-        border-bottom: 2px gray solid;
-        outline: 0;
-        outline-color: gray;
-        #Text{
-            display:inline;
-            margin-left:0px;
-            margin-right:5px;
-        }
-        #Texto{
-            display:inline;
-            margin-right: 47px;
-        }
-        
-    }
-    @media (min-width:500px) {
-        .inputs{
-            width:150px;
-            font-size: large;
-            text-align: center;
-
-            
-        }
-    }
+.ContainerMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .Selection{
-        width: 65px;
-        margin-left: 0px;
-        margin-right: 5px;
-        border: 0px;
+        position: relative;
+        top: -10vh;
+        left: 35vw;
+        padding: 12px;
+        width: 100px;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
     }
-    #Selection1{
-        display: inline;
-        width: 65px;
-        margin-left: 0px;
-        margin-right: 5px;
-        border: 0px;
-    }
-    .EmCima{
-        margin-bottom: 20px;
-    }   
-    input[type=number]::-webkit-inner-spin-button { 
-        -webkit-appearance: none;
-        
-    }
-    input[type=number] { 
-        -moz-appearance: textfield;
-        appearance: textfield;
+    .Form{
+        height: 70vh;
+        .ContainerForm{
+            display:flex;
+            flex-flow: column;
+            border-radius: 10px;
+            -moz-box-shadow: 0px 1px 5px 0px #676767;
+            -webkit-box-shadow: 0px 1px 5px 0px #676767;
+            box-shadow: 0px 1px 5px 0px #676767;
+            padding: 50px;
+            background-color: white;
+            .inputs{
+                width:70px;
+                text-align: start;
+                border: 0px;
+                border-bottom: 2px gray solid;
+                outline: 0;
+                outline-color: gray;
+                #Text{
+                    display:inline;
+                    margin-left:0px;
+                    margin-right:5px;
+                }
+                #Texto{
+                    display:inline;
+                    margin-right: 47px;
+                }
+                
+            }
+            @media (min-width:500px) {
+                .inputs{
+                    width:150px;
+                    font-size: large;
+                    text-align: center;
+                }
+            }
+            .moeda{
+                align-self: flex-end;
+                margin-right: 10px;
+            }
+            .containerInput1{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 10px;
+            }  
+            input[type=number]::-webkit-inner-spin-button { 
+                -webkit-appearance: none;
+                
+            }
+            input[type=number] { 
+                -moz-appearance: textfield;
+                appearance: textfield;
+            }
+        }
     }
 }
-.Form{
-    display:flex;
-    flex-flow: column;
-    align-items: center;
-}    
-@media (max-height: 400px) {
+@media(max-height: 400px) {
     .ContainerMain{
-        // margin-top: 100px;
         .ContainerForm{
             margin-top: 175px;
             padding: 32px;
         }
-
+        .Selection{
+            height: -10vw;
+        }
     }
-
 }
+@media (max-width: 499px) {
+    .ContainerMain{
+        .Selection{
+            left: 26vw;
+        }
+    }
+}
+   
 #USD{
     background-image: url(../../assets/flags/USA.png);
     background-size: cover;
